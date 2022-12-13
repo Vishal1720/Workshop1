@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset
+        {
+width: 29%;
+height:23%
+        }
+        form
+        {
+           
+            text-align: left;
+            padding-bottom: 6px;
+            padding-left: 22%;
+            font-size: 24px
+        }
+        input,label,select,textarea,button
+        
+        {
+            margin-bottom: 15px;
+        }
+        .message
+        {
+font-size: 22px;
+color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <fieldset >
+        <legend>Registration form</legend>
+    <form>
+    <label for="name">Name</label>
+    <input id="name"type="text"><br>
+    <label for="email1">Email</label><input id="email1" type="email"><br>
+    <label for="number1">Phone number</label><input id="number"type="number"><br>
+    <label for="call">Request Phone Call</label>
+    <label for="yes">Yes</label><input type="checkbox" name="gen1" id="yes"><label for="no">No</label><input type="checkbox" name="gen1"><br>
+    <label>Gender</label><input type="radio" name="gen"><label  id="male">Male</label><input name="gen" type="radio" id="female">Female<label id="female"></label>
+    <br><label for="web">Website</label>
+    <input id="web"type="text"><br>
+    <label for="web">Priority</label>
+    <select>
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+    </select>
+    <br>
+    <label>Type</label>
+    <select >
+        <option>Website Update</option>
+        <option>Website Down</option>
+
+    </select>
+    <br>
+    <label>Message</label><br>
+     <textarea id="message"></textarea><br>
+    <input type="button" value="Send"><button>clear</button>
+</form>
+</fieldset>
+<script></script>
+</body>
+</html>

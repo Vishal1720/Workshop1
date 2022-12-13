@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            font-size: 44px;
+            color: red;
+        }
+        body
+        {
+            background-color: rgb(66, 48, 78);
+        }
+        button
+        {
+            font-size: 34px;
+            color: aliceblue;
+            background-color: rgb(133, 44, 44);
+        }
+        div
+        {
+            margin-left: 34%;
+            margin-top: 12%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p ondblclick="myfun()" id="hello">Hello here are you</p>
+    <p id="tc1" onmouseup="mouseup()" onmousedown="mousedown()">Test case 1</p> -->
+    <div>
+<button onclick="turnon()" id="bulb1">Turn on</button>
+<img src="bulboff.jpg" id="bulb" alt="bulboff">
+<button onclick="turnoff()"  id="bulb2">Turn off</button>
+</div>
+    <img>
+    <script>
+
+        // var a=document.getElementById("hello");
+        // let b=document.getElementById("tc1");
+        // function myfun()
+        // {
+        //    a.textContent="Paragraph is written";
+        // }
+        // function mouseup()
+        // {
+        //    b.style.color="green";
+        // }
+        // function mousedown()
+        // {
+        //    b.style.color="green";
+        // }
+        var b=document.getElementById("bulb");
+        b1=document.getElementById("bulb1");
+        b2=document.getElementById("bulb2");
+        function turnon()
+        {
+b.src="bulbon.jpg";
+b1.style.backgroundColor="green";
+b2.style.backgroundColor="red";
+        }
+        function turnoff()
+        {
+b.src="bulboff.jpg";
+b1.style.backgroundColor="red";
+b2.style.backgroundColor="green";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+*{
+
+}
+ol{
+    color:aliceblue;
+    font-size: 38px;
+}
+ul
+{
+    color:rgb(40, 99, 148);font-size: 38px;;
+}
+table{
+    margin-left:30%;
+    background-color: rgb(41, 53, 63);
+    width:34%;
+}
+td,th
+{
+    padding: 5px;
+}
+tr,th,td,table
+{
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-size: 30px;
+   text-align: center;
+    
+    color:rgb(216, 216, 228);
+}
+body{
+    background-color: rgb(43, 23, 23);
+}
+th
+{
+    background-color: #04AA60;
+}
+tr:nth-child(even)
+{
+    background-color: yellowgreen;
+}
+tr:nth-child(odd)
+{
+    background-color: green;
+}
