@@ -1,0 +1,18 @@
+.clikBtn
+{
+    width: 103px;
+    height: 103px;
+    border-radius: 23px;
+    background-color: aqua;
+    margin: 0;
+    border-block-width: 5px;
+    border-color: blanchedalmond;
+}
+div
+{
+    margin-top: 5%;
+}
+p
+{
+    margin-left: 0;
+}
