@@ -2,7 +2,7 @@
 {
     width: 100px;
     height: 100px;
-    border-radius: 23px;
+    border-radius: 26px;
     background-color: rgb(207, 200, 105);
     margin: 0;
     font-weight: 900;
@@ -16,13 +16,10 @@
 
 #divBtns
 {
-    margin-left: 32%;
-   ;
+    margin-left: 32%; 
     justify-content: center;    
     height: 505px;
-    width: 455px  ;
-    
-    
+    width: 455px;
 }
 div
 {
