@@ -10,7 +10,7 @@ function generateTreasureIndex()//Use to select a number for index where the tre
 {
      winCondition=Math.floor(Math.random()*16);
 }
-generateTreasureIndex();
+generateTreasureIndex();//generate treasure location
 
 function check(id)
   {
