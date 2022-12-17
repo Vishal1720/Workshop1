@@ -1,16 +1,22 @@
 let players = document.getElementById("player");
 let buns=document.getElementsByClassName("clikBtn");
 let attempt=document.getElementById("attempts");
+let timer=document.getElementById("timer");
 var inc,winCondition;
 var gameend=false;
-var i=0;
+var i=0,count=0;
 prompter();//calling function to ask for user name
-
+function timeoutFunction()
+{
+  count++;
+  timer.textContent="Time:"+count+" seconds";
+}
+    var a=setInterval(()=>{timeoutFunction(); },1000);//this method is used to call the method again and again for interval of 1000 milliseconds i.e 1second
 function generateTreasureIndex()//Use to select a number for index where the treasure is there
 {
      winCondition=Math.floor(Math.random()*16);
 }
-generateTreasureIndex();//generate treasure location
+generateTreasureIndex();
 
 function check(id)
   {
@@ -20,7 +26,7 @@ function check(id)
     console.log(buns.length);
     if(buns[id].style.backgroundColor=="red"||buns[id].style.backgroundColor=="green")
     {
-        //This to prevent unecessary increment to attempts
+        //This is to prevent unecessary increment to attempts
     }
     else
     {
@@ -44,9 +50,10 @@ function check(id)
 }
 }
 
-
 function prompter()
 {
      var a=prompt("Enter your name");
      players.textContent+=a;//name added to para 
 }
+
+
