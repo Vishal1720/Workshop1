@@ -1,18 +1,35 @@
 .clikBtn
 {
-    width: 103px;
-    height: 103px;
+    width: 100px;
+    height: 100px;
     border-radius: 23px;
-    background-color: aqua;
+    background-color: rgb(207, 200, 105);
     margin: 0;
-    border-block-width: 5px;
-    border-color: blanchedalmond;
+    font-weight: 900;
+    border-block-width: 9px;
+    border-color: rgb(83, 53, 11);
+    font-size: 66px;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+#divBtns
+{
+    margin-left: 32%;
+   ;
+    justify-content: center;    
+    height: 505px;
+    width: 455px  ;
+    
+    
 }
 div
 {
     margin-top: 5%;
 }
-p
+h1
 {
     margin-left: 0;
+    color: beige;
 }
