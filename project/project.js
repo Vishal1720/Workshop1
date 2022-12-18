@@ -24,13 +24,17 @@ function timeoutFunction()
 
   timer.textContent="Time:"+hrs+":"+min+":"+sec;
 }
-    var a=setInterval(()=>{timeoutFunction(); },1000);//this method is used to call the method again and again for interval of 1000 milliseconds i.e 1second
+    const a=setInterval(()=>{timeoutFunction(); },1000);//this method is used to call the method again and again for interval of 1000 milliseconds i.e 1second
 function generateTreasureIndex()//Use to select a number for index where the treasure is there
 {
      winCondition=Math.floor(Math.random()*16);
 }
 generateTreasureIndex();
 
+function stopTimer()
+{
+  clearInterval(a);
+}
 function check(id)
   {
     
@@ -46,11 +50,12 @@ function check(id)
     {
         if(id===winCondition)
          {
-            
+            stopTimer();
           buns[id].style.backgroundColor="green";
           gameend = true;
             let temp=i;
             buns[id].value="O";
+            
         //   alert("Congrats you won in "+(temp+=1)+" attempts");
           }
        else
@@ -68,9 +73,10 @@ function check(id)
 
 function prompter()
 {
-     var a=prompt("Enter your name");
+     var b=prompt("Enter your name");
      
-     players.textContent+=a;//name added to para 
+     players.textContent+=b;//name added to para 
      
 }
+
 
