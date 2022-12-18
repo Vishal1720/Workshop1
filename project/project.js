@@ -5,6 +5,7 @@ let timer=document.getElementById("timer");
 var inc,winCondition;
 var gameend=false;
 var i=0,sec=0,min=0,hrs=0,count=0;
+
 prompter();//calling function to ask for user name
 function timeoutFunction()
 {
@@ -21,8 +22,16 @@ function timeoutFunction()
       hrs++;
   }
 }
-
-  timer.textContent="Time:"+hrs+":"+min+":"+sec;
+if(min<=9&&sec<=9)
+timer.textContent="Time:0"+hrs+":0"+min+":0"+sec;
+else
+if(sec<=9&&min>9)
+timer.textContent="Time:0"+hrs+":"+min+":0"+sec;
+else
+if(min<=9&&sec>9)
+timer.textContent="Time:0"+hrs+":0"+min+":"+sec;
+else
+timer.textContent="Time:0"+hrs+":"+min+":"+sec;//added 0 wherever needed to show the numbers as two digits mainly for mins and secs 
 }
     const a=setInterval(()=>{timeoutFunction(); },1000);//this method is used to call the method again and again for interval of 1000 milliseconds i.e 1second
 function generateTreasureIndex()//Use to select a number for index where the treasure is there
@@ -69,7 +78,6 @@ function check(id)
 
 }
 }
-
 
 function prompter()
 {
