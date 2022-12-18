@@ -44,6 +44,7 @@ function stopTimer()
 {
   clearInterval(a);
 }
+
 function check(id)
   {
     
@@ -64,8 +65,9 @@ function check(id)
           gameend = true;
             let temp=i;
             buns[id].value="O";
-            
-        //   alert("Congrats you won in "+(temp+=1)+" attempts");
+            d=setTimeout(()=>{
+              window.alert("You won in "+i+" attempts in "+timer.textContent);
+            },100);//timeout used because alert used to display first before box could be turned green
           }
        else
         {
@@ -75,16 +77,16 @@ function check(id)
     i++;
     attempt.textContent="Attempts:"+i;//attempts updated
     }
-
 }
 }
 
 function prompter()
 {
      var b=prompt("Enter your name");
-     
-     players.textContent+=b;//name added to para 
-     
+     players.textContent+=b;//name added to para   
 }
+
+
+
 
 
