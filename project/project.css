@@ -21,12 +21,26 @@
     height: 505px;
     width: 455px;
 }
-div
+#highscores
 {
-    margin-top: 5%;
+    margin-left: 42%; 
+    width: 200px; 
 }
+
 h1
 {
     margin-left: 0;
     color: beige;
+}
+footer
+{
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+}
+a{
+    color: beige;
+    font-size: 18px;
+    border: solid 2px black;
+    background-color: blue;
 }
